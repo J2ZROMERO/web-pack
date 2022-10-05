@@ -5,6 +5,8 @@ module.exports = {
     
     devServer: {
         static: './dist',
+        liveReload: true,
+        hot:false,
       },
       optimization: {
         runtimeChunk: 'single',
@@ -18,6 +20,7 @@ module.exports = {
   ],
   output: {
     filename: '[name].js',
+    
     path: path.resolve(__dirname, 'dist'),
     clean: true,
     
